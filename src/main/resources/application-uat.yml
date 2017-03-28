@@ -1,0 +1,14 @@
+server:
+  port: 9091
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:./h2/MyDB;AUTO_SERVER=TRUE
+    username: wh
+    password: wh321
+
+  jpa:
+    hibernate:            #每次都会创建表
+      ddl-auto: update
+    show-sql: true
